@@ -8,19 +8,5 @@
     -->
     <jaxb:globalBindings underscoreBinding="asCharInWord" />
         
-    <jaxb:bindings schemaLocation="../xsd/System.Data.Resources.SSDLSchema_3.xsd">
-      <jaxb:bindings node="//xsd:element[@name='EntitySet']/xsd:complexType/xsd:attribute[@name='Name']">
-        <jaxb:property name="EntitySetName"/>
-      </jaxb:bindings>
-      <jaxb:bindings node="//xsd:element[@name='EntitySet']/xsd:complexType/xsd:attribute[@name='Schema']">
-        <jaxb:property name="EntitySetSchema"/>
-      </jaxb:bindings>
-      <jaxb:bindings node="//xsd:complexType[@name='TFunction']/xsd:attribute[@name='Name']">
-        <jaxb:property name="TFunctionName"/>
-      </jaxb:bindings>
-      <jaxb:bindings node="//xsd:complexType[@name='TFunction']/xsd:attribute[@name='Schema']">
-        <jaxb:property name="TFunctionSchema"/>
-      </jaxb:bindings>
-    </jaxb:bindings>
   </jaxb:bindings>
 </jaxb:bindings>

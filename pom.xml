@@ -30,6 +30,7 @@
         <configuration>
           <verbose>true</verbose>
           <nv>true</nv>
+          <extension>true</extension>
         </configuration>
       </plugin>
       <plugin>
