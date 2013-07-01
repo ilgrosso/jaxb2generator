@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+           xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+  
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+             schemaLocation="xml.xsd" />
+   
+  <xs:element name="error">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="code" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="message" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" type="xs:string"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <!--<xs:element name="innererror" type="m:any" maxOccurs="1" minOccurs="0"/>-->
+        <xs:any minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
